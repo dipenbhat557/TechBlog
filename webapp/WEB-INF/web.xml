@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>BlogWeb</display-name>
+  <welcome-file-list>
+<welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>RegisterServlet</servlet-name>
+  <servlet-class>com.BlogServlets.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RegisterServlet</servlet-name>
+  <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.BlogServlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  <servlet-name>LogOutServlet</servlet-name>
+  <servlet-class>com.BlogServlets.LogOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LogOutServlet</servlet-name>
+  <url-pattern>/LogOutServlet</url-pattern>
+  </servlet-mapping>
+  
+       <servlet>
+  <servlet-name>EditServlet</servlet-name>
+  <servlet-class>com.BlogServlets.EditServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>EditServlet</servlet-name>
+  <url-pattern>/EditServlet</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  <servlet-name>AddPostServlet</servlet-name>
+  <servlet-class>com.BlogServlets.AddPostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddPostServlet</servlet-name>
+  <url-pattern>/AddPostServlet</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  <servlet-name>LikeServlet</servlet-name>
+  <servlet-class>com.BlogServlets.LikeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LikeServlet</servlet-name>
+  <url-pattern>/LikeServlet</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  <servlet-name>SearchServlet</servlet-name>
+  <servlet-class>com.BlogServlets.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SearchServlet</servlet-name>
+  <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+  <servlet-name>DeletePostServlet</servlet-name>
+  <servlet-class>com.BlogServlets.DeletePostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeletePostServlet</servlet-name>
+  <url-pattern>/DeletePostServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
